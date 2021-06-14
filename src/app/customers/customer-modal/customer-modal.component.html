@@ -1,0 +1,35 @@
+
+<mat-dialog-content>
+  <form [formGroup]="customerForm">
+    <mat-form-field>
+      <input matInput placeholder="firstName" formControlName="firstName">
+      <mat-hint>English letters only.</mat-hint>
+      <mat-error *ngIf="firstNameFormControl.hasError('required')">
+        firstName is required.
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="lastName" formControlName="lastName">
+      <mat-error *ngIf="lastNameFormControl.hasError('required')">
+        lastName is required.
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="lastName" formControlName="phone">
+      <mat-error *ngIf="phoneFormControl.hasError('required')">
+        phone is required.
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="lastName" formControlName="address">
+      <mat-error *ngIf="addressFormControl.hasError('required')">
+        address is required.
+      </mat-error>
+    </mat-form-field>
+
+  </form>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button [mat-dialog-close]="false">CANCEL</button>
+  <button mat-button (click)="onSave(customerForm.value)" [disabled]="!customerForm.valid" color="primary">SAVE</button>
+</mat-dialog-actions>

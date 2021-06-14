@@ -1,0 +1,7 @@
+.customer-card {
+  margin: 10px;
+}
+
+.customer-card__title {
+  display: flex;
+}
