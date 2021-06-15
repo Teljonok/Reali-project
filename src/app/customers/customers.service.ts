@@ -14,12 +14,6 @@ export class CustomersService {
   constructor(public http: HttpClient) {
   }
   
-  id?: number;
-  firstName?: string;
-  lastName?: string;
-  phone?: string;
-  address: string;
-
   getCustomers(): Observable<Customer[]> {
     return this
       .http

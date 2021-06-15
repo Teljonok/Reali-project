@@ -1,5 +1,7 @@
-import {Action} from '@ngrx/store';
+
 import {Customer} from '../../models/customer';
+import { Action } from '@ngrx/store';
+
 
 export const LOAD_CUSTOMERS = '[Customers] Load Customers';
 export const LOAD_CUSTOMERS_FAIL = '[Customers] Load Customers Fail';
