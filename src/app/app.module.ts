@@ -27,7 +27,6 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     
     StoreModule.forRoot({customers: customersReducer}),
     EffectsModule.forRoot([CustomersEffects]),
-    
     MatToolbarModule
   ],
   providers: [],
