@@ -18,7 +18,8 @@ import { CustomerModalComponent } from './customer-modal/customer-modal.componen
     MatButtonModule,
   ],
   exports: [
-    CustomerListComponent
+    CustomerListComponent,
+    CustomerModalComponent
   ],
   declarations: [
     CustomerListComponent,
